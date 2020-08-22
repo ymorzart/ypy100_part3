@@ -19,7 +19,7 @@ keywords = ["현대 팰리세이드","쌍용 렉스턴"]
 local_area = "KR"
 period = "2020-01-01 2020-06-30"
 
-#resp = requests.get('https://trends.google.com:443', verify=False) 
+resp = requests.get('https://trends.google.com:443', verify=False) 
 #resp = requests.get(base_url, verify = False)
 #html_src = resp.text
 #soup = BeautifulSoup(html_src,'html.parser')
@@ -40,8 +40,8 @@ print(trend_df.head())
 print("\n")
 
 #https://finance.yahoo.com/
-hd = pd.read_csv("./data/005380.KS.csv", index_col=0, encoding='utf-8')
-sy = pd.read_csv("./data/003620.KS.csv", index_col=0, encoding='utf-8')
+hd = pd.read_csv("C:/Vincent/Devops/Spyder Projects/Start of June/finance/005380.KS.csv", index_col=0, encoding='utf-8')
+sy = pd.read_csv("C:/Vincent/Devops/Spyder Projects/Start of June/finance/003620.KS.csv", index_col=0, encoding='utf-8')
 print(hd.head())
 print("\n")
 
