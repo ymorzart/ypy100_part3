@@ -8,9 +8,9 @@ Target Countries Data Center Area
 Create 2개 엑셀화일 전세계 216개국 순위, 센터권역 순위
 """
 import os
-os.environ["HTTP_PROXY"] = "http://70.10.15.10:8080"
-os.environ["HTTPS_PROXY"] = "http://70.10.15.10:8080"
-os.environ["PYTHONHTTPSVERIFY"] = "0"
+# os.environ["HTTP_PROXY"] = "http://70.10.15.10:8080"
+# os.environ["HTTPS_PROXY"] = "http://70.10.15.10:8080"
+# os.environ["PYTHONHTTPSVERIFY"] = "0"
 
 import pandas as pd
 from datetime import datetime
@@ -48,7 +48,7 @@ result = df.rename(columns={"index":"순위"," Country":"국가"," Cumulative_ca
 
 # Total 
 datestring = datetime.strftime(datetime.now(),'%Y_%m_%d_%H_%M')
-result.to_excel('K:/My files/Download/DC_COVID19_4/WHO-COVID-19_Total_'+ datestring +'.xlsx'\
+result.to_excel('C:/Vincent/Devops/Spyder Projects/Mid of Aug/DC_COVID19_8/WHO-COVID-19_Total_'+ datestring +'.xlsx'\
               ,index=False,startrow=1, startcol=1,)
 
 ##DC권역 선정 국가만 나열 
@@ -70,7 +70,7 @@ print(result)
 
 #날짜포홤 엑셀저장
 datestring = datetime.strftime(datetime.now(),'%Y_%m_%d_%H_%M')
-result.to_excel('K:/My files/Download/DC_COVID19_4/WHO-COVID-19_DC_Area_'+ datestring +'.xlsx'\
+result.to_excel('C:/Vincent/Devops/Spyder Projects/Mid of Aug/DC_COVID19_8/WHO-COVID-19_DC_Area_'+ datestring +'.xlsx'\
               ,index=False,startrow=1, startcol=1,)
 
 # datestring = datetime.strftime(datetime.now(),'%Y_%m_%d_%H_%M')
