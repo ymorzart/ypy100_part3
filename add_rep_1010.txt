@@ -1,1 +1,31 @@
 Add Repository 1001 at Github Repyby100_part3
+
+Gihub 
+Command 작업 
+1. github account -> Remote Repository 생성 (기존에 사용) - https 주소복사 
+   Remote 설정
+   create github account - create new repository for dev
+   
+2. PC 설정 로컬 설정
+install Git 64bit - 로컬 디렉토리 생성 - git  Bash here 로 commnd 라인 진입 - git init - git remote add orign 위의 Repository  https 주소 입력
+3.  Upload (Push)
+git status  ->> no commit yet (변경없음 확인)
+화일 생성 또는 변경  
+git status ->>    변경 화일이 commit안되었다고 알려줌 
+git add .   ->>   모든 화일 업로드 
+git commit -m "업데이트 내용"
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git push origin master 
+
+-> 아래와 동일 
+
+GithubDesk 활용 
+install GithubDesktop - github account 연결 - 로컬 디렉토리생성(logcal directrtory) - git init 구성됨(완료)
+현재 Repository - Add - 복제 Clone, 신규 New, 추가 Add
+프로그램 수정, 변경 실시 - summary(tag 기능)  , description 추가 - commit to master (수정완료확정) -  Push (github로 업로드- 지정된 위치)
+
+별도 버전관리 - branch (사용에 복잡성을 감안하여 나중에 사용)
+github - master 에서 생성 - 동일 항목copied - create pull request ( branch -> master overwrite  주의)
+로컬에서 개발하고 branch로 업데이트하고 나중에 pull request로  master로 overwrite함.
+
