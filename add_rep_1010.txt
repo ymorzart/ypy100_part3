@@ -1,5 +1,6 @@
 Add Repository 1001 at Github Repyby100_part3
 
+
 Gihub 
 Command 작업 
 1. github account -> Remote Repository 생성 (기존에 사용) - https 주소복사 
@@ -17,7 +18,6 @@ git commit -m "업데이트 내용"
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 git push origin master 
-
 -> 아래와 동일 
 
 GithubDesk 활용 
